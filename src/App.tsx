@@ -15,7 +15,8 @@ function App() {
         <ArrowFunctionalComponentWithProps title={'Arrow Functional Component With Props'} />
         <ArrowFunctionalComponentWithPropsType
             title={'Arrow Functional Component With Props'}
-            description={'Using Type'} />
+            description={'Using Type'}
+        />
         <ViteIntro />
     </>
   )
