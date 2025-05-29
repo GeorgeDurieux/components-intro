@@ -12,6 +12,7 @@ import NameChanger from "./components/NameChanger.tsx";
 import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 import CounterAdvanced from "./components/CounterAdvanced.tsx";
 import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
+import CounterWithReducer from "./components/CounterWithReducer.tsx";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
             <CounterWithMoreStates  />
             <CounterAdvanced />
             <CounterWithCustomHook />
+            <CounterWithReducer />
             <NameChanger />
             <ViteIntro />
         </Layout>
