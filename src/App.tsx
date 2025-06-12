@@ -7,6 +7,8 @@ import UserPage from "./pages/UserPage.tsx";
 import RouterLayout from "./components/RouterLayout.tsx";
 import ExamplesPage from "./pages/ExamplesPage.tsx";
 import RouterExamplesLayout from "./components/RouterExamplesLayout.tsx";
+import AutoRedirectPage from "./pages/AutoRedirectPage.tsx";
+import NotFoundPage from "./pages/NotFoundPage.tsx";
 // import ViteIntro from "./pages/ViteIntro.tsx";
 // import ClassComponent from "./components/ClassComponent.tsx";
 // import FunctionalComponent from "./components/FunctionalComponent.tsx";
@@ -59,11 +61,13 @@ function App() {
                             <Route index element={<ExamplesPage />} />
                             <Route path="name-changer" element={<NameChangerPage />} />
                             <Route path="online-status" element={<OnlineStatusPage />} />
+                            <Route path="auto-redirect" element={<AutoRedirectPage />}/>
 
                         </Route>
 
                         <Route path="users" element={<UserPage />} />
                         <Route path="users/:userId" element={<UserPage />} />
+                        <Route path="*" element={<NotFoundPage />} />
 
                     </Routes>
             </BrowserRouter>
